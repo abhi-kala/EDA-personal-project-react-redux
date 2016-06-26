@@ -1,4 +1,6 @@
 import React from 'react'
+import ShowDetailsContainer from '../containers/ShowDetailsContainer'
+
 
 
 export default (props) => (
@@ -7,9 +9,12 @@ export default (props) => (
     <ul>
       {props.jobs.map((job)=>{
         return <li key={job.id}>
-          {job.title}{' '}{job.day}{' '}{job.money}{' '}{job.duration}
+          <p>Title:{' '}{job.title}<br/>{' '}Day:{job.day}{' '}Earn:${job.money}{' '}Job Duration: {job.duration}</p>
+          {<button onClick={()=>props.showDetails(job.id)}>Show Details</button>}
+          {job.id === props.selectedJob && <ShowDetailsContainer/>}
         </li>
       })}
     </ul>
+
   </div>
 )

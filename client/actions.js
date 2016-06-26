@@ -1,5 +1,6 @@
 export const REAL_TIME_SEARCH = 'REAL_TIME_SEARCH'
 export const SELECT_MENU = 'SELECT_MENU'
+export const SHOW_DETAILS = 'SHOW_DETAILS'
 
 
 export const realTimeSearch = (term) => (
@@ -12,6 +13,13 @@ export const realTimeSearch = (term) => (
 export const selectMenu = (id) => (
   {
     type: SELECT_MENU,
+    id: id
+  }
+)
+
+export const showDetails = (id) => (
+  {
+    type: SHOW_DETAILS,
     id: id
   }
 )
