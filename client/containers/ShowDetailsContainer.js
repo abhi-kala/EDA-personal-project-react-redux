@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 
 import ShowDetails from '../components/ShowDetails'
+import { hideDetails } from '../actions'
 
 
 const mapStateToProps = (state) => {
@@ -13,4 +14,12 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps)(ShowDetails)
+const mapDispatchToProps = (dispatch) => {
+  return {
+    hideDetails: () => (
+      dispatch(hideDetails())
+    )
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ShowDetails)
