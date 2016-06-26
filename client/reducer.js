@@ -1,8 +1,11 @@
+import { REAL_TIME_SEARCH } from './actions'
+
 const INITIAL_STATE = {
   selectedDay: null,
   selectedLocation: null,
   selectedDuration: null,
   selectedJob: null,
+  searchString:'',
   jobs:[
     { id:1, title: "IT Assistance", day: "Monday", money: 80, location: "Parnell", duration: "2" },
     { id:2, title: "Promo Staff", day: "Friday", money: 100, location: "Britomart", duration: "4" },
@@ -15,5 +18,10 @@ const INITIAL_STATE = {
 }
 
 export default (state = INITIAL_STATE, action) => {
-  return state
+  switch (action.type){
+    case REAL_TIME_SEARCH:
+      return Object.assign({}, state, {searchString:action.term})
+    default:
+      return state
+  }
 }
