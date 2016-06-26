@@ -21,7 +21,6 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
       realTimeSearch: (term) => {
-      console.log('running realTimeSearch', term);
       dispatch(realTimeSearch(term))
     }
   }

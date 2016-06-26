@@ -1,11 +1,16 @@
-import { REAL_TIME_SEARCH } from './actions'
+import { REAL_TIME_SEARCH, SELECT_MENU, ADD_JOB } from './actions'
 
 const INITIAL_STATE = {
+  selectedMenu: 1,
   selectedDay: null,
   selectedLocation: null,
   selectedDuration: null,
   selectedJob: null,
   searchString:'',
+  menu:[
+    {id:1, title: "Jobs Listings"},
+    {id:2, title: "Add Job"}
+  ],
   jobs:[
     { id:1, title: "IT Assistance", day: "Monday", money: 80, location: "Parnell", duration: "2" },
     { id:2, title: "Promo Staff", day: "Friday", money: 100, location: "Britomart", duration: "4" },
@@ -21,6 +26,8 @@ export default (state = INITIAL_STATE, action) => {
   switch (action.type){
     case REAL_TIME_SEARCH:
       return Object.assign({}, state, {searchString:action.term})
+    case SELECT_MENU:
+      return Object.assign({}, state, {selectedMenu:action.id})
     default:
       return state
   }

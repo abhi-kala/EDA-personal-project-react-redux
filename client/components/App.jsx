@@ -1,13 +1,9 @@
 import React from 'react'
-import JobsListContainer from '../containers/JobsListContainer'
+import MenuContainer from '../containers/MenuContainer'
 
-export default React.createClass({
-  render () {
-    return (
-      <div>
-        <h1>Jobs</h1>
-        <JobsListContainer/>
-      </div>
-    )
-  }
-})
+export default (props) => (
+  <div>
+    <h1>Jobs</h1>
+    <MenuContainer/>
+  </div>
+)
