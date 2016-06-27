@@ -15,14 +15,14 @@ export const INITIAL_STATE = {
       title: "IT Assistance",
       day: "Monday",
       money: 80, location: "Parnell", duration: "2",
-      description: "This is the best job in the world" },
+      description: "IT Assistance is the best job in the world" },
     {
       id:2,
       title: "Promo Staff",
       day: "Friday",
       money: 100,
       location: "Britomart", duration: "4",
-      description: "This is the best job in the world" },
+      description: "Promo Staff is the best job in the world" },
     {
       id:3,
       title: "Leaflet drop",
@@ -30,7 +30,7 @@ export const INITIAL_STATE = {
       money: 90,
       location: "Ponsonby",
       duration: "4",
-      description: "This is the best job in the world" },
+      description: "Leaflet drop is the best job in the world" },
     {
       id:4,
       title: "Finance tutor needed",
@@ -38,7 +38,7 @@ export const INITIAL_STATE = {
       money: 90,
       location: "Mission Bay",
       duration: "3",
-      description: "This is the best job in the world" },
+      description: "Finance tutor needed is the best job in the world" },
     {
       id:5,
       title: "Usher for promo event needed",
@@ -46,7 +46,7 @@ export const INITIAL_STATE = {
       money: 200,
       location: "Britomart",
       duration: "5",
-      description: "This is the best job in the world" },
+      description: "Usher for promo event needed is the best job in the world" },
     {
       id:6,
       title: "Night club work",
@@ -54,7 +54,7 @@ export const INITIAL_STATE = {
       money: 80,
       location: "Britomart",
       duration: "4",
-      description: "This is the best job in the world" },
+      description: "Night club work is the best job in the world" },
     {
       id:7,
       title: "Cafe work",
@@ -62,6 +62,6 @@ export const INITIAL_STATE = {
       money: 120,
       location: "Remeuera",
       duration: "6",
-      description: "This is the best job in the world" }
+      description: "Cafe work is the best job in the world" }
   ]
 }
